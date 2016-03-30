@@ -1,0 +1,44 @@
+
+*{
+	box-sizing: border-box;
+}
+.chess{
+
+	width: 700px;
+	height: 700px;
+	background: #000;
+	padding: 10px 10px;
+
+}
+.chess li {
+	float: left;
+	width: 80px;
+	height: 80px;
+}
+.chess ul:nth-child(odd) li:nth-child(odd), .chess ul:nth-child(even) li:nth-child(even){
+	background: #fff;
+}
+ul, li{
+	list-style: none;
+}
+.chess ul:nth-child(-n+3):nth-child(odd) li:nth-child(odd):before, .chess ul:nth-child(-n+3):nth-child(even) li:nth-child(even):before{
+	background: #777;
+}
+
+.chess ul:nth-last-child(-n+3):nth-child(odd) li:nth-child(odd):before, .chess ul:nth-last-child(-n+3):nth-child(even) li:nth-child(even):before{
+	
+	background: #f0f;
+}
+.chess li:before{
+	margin: -30px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	content: " ";
+border-radius: 50%;
+display: block;
+width: 60px;
+	height: 60px;
+}
+
+
